@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("https://media.giphy.com/media/l41lS5jJlLIMa9Xby/giphy.gif");
+      background-size: cover;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button-image {
+      background-image: url("https://i.pinimg.com/564x/70/00/f8/7000f8c50fcbea153fbb6fa8e9b0a70a.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function showOptions() {
+      var options = ["Option 1", "Option 2", "Option 3"];
+      var selectedOption = window.prompt("Choose an option:", options.join("\n"));
+      if (options.indexOf(selectedOption) !== -1) {
+        alert("You selected " + selectedOption);
+      } else {
+        alert("Invalid option");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="button-image" onclick="showOptions()"></div>
+</body>
+</html>
