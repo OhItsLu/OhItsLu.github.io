@@ -36,9 +36,13 @@
   </style>
   <script>
     function showOptions() {
-        var chatId = getChatId();
-        window.open("https://t.me/MevsYouBot?start=tris&chat_id=" + chatId);
+        var botUsername = 'MevsYouBot';
+        var botToken = '6258105459:AAGpfvq3kf-WBfsCLoRh0XOvvgEbP-kChfU';
+        var message = '/tris';
+        var url = 'https://api.telegram.org/bot' + botToken + '/sendMessage?chat_id=' + botUsername + '&text=' + message;
+        window.open(url);
     }
+
 
   </script>
 </head>
